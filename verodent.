@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <tittle>&copy;Verod webpage</tittle>
+        <meta charset="UTF-8">
+        <meta name="author" content="ATIENO GRACE E ONYANGO" >
+        <meta name="descripition" content="A webpage for Verod Catering, Decor & Events Services.">
+        <meta property="og:title" content="Verod Enterprices">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.verodenterprices.com">
+        <style>
+            /*General Body Styling*/
+            body{
+                background-color:whitesmoke;
+                color: black;
+                margin: 0;
+                padding: 0;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            /*Header styling*/
+            header{
+                background-color: black;
+                color: aliceblue;
+                padding:10px;
+            }
+            #text-container {
+    display: flex;
+    justify-content: left; /* Centers text horizontally */
+    gap: 100px; /* Adds space between text elements */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#text-container span {
+    white-space: nowrap; /* Prevents text from breaking */
+}
+#text-container span img{
+    width: 150px;
+ height: 150px;
+ border-radius: 250px;
+ margin: 20px auto;
+ display: block;
+ border: 5px solid black;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+            
+            /*division styling*/
+            .container {
+    display: flex;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: row; /* Stack images vertically */
+    align-items: center; /* Align images to the left */
+}
+
+#image-container img {
+    width: 240px; /* Adjust size as needed */
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    margin-right: 3px; /* Space between images */
+    
+}
+
+#text-container {
+    max-width:auto;/* Adjust text width */
+}
+img{
+ width: 250px;
+ height: 250px;
+ border-radius: 250px;
+ margin: 20px auto;
+ display: block;
+ border: 5px solid black;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+            /* Navigation Styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 20px;
+        }
+
+        nav button {
+            margin: 0 10px;
+            padding: 12px 25px;
+            background-color:green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: large;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color:rgb(12, 12, 76);
+            transform: scale(1.05);
+        }
+
+        section {
+            display: none;
+            padding: 50px;
+            margin: 20px auto;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+       
+        #Work {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Arrange images in a row */
+#Work div {
+    display: flex;
+    justify-content: center; /* Centers images in the container */
+    gap: 15px; /* Adds spacing between images */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+/* Style images with rectangular borders */
+#Work img {
+    width: 1000px; /* Adjust width */
+    height: 300px; /* Adjust height for a rectangular shape */
+    object-fit: cover;
+    border-radius: 10px; /* Slight rounding for a modern look */
+    border: 4px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+#Work img:hover {
+    transform: scale(1.05);
+}
+#food {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Arrange images in a row */
+#food div {
+    display: flex;
+    justify-content: center; /* Centers images in the container */
+    gap: 15px; /* Adds spacing between images */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+/* Style images with rectangular borders */
+#food img {
+    width: 1000px; /* Adjust width */
+    height: 300px; /* Adjust height for a rectangular shape */
+    object-fit: cover;
+    border-radius: 10px; /* Slight rounding for a modern look */
+    border: 4px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+/* Hover effect */
+#food img:hover {
+    transform: scale(1.05);
+}
+#Clients {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Arrange images in a row */
+#Clients div {
+    display: flex;
+    justify-content: center; /* Centers images in the container */
+    gap: 15px; /* Adds spacing between images */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+/* Style images with rectangular borders */
+#Clients img {
+    width: 1000px; /* Adjust width */
+    height: 300px; /* Adjust height for a rectangular shape */
+    object-fit: cover;
+    border-radius: 10px; /* Slight rounding for a modern look */
+    border: 4px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+#Clients img:hover {
+    transform: scale(1.05);
+}
+.second-header{
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    background: linear-gradient(-45deg, #403e3e, #02350e, #161515, #021234);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    }
+    
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+/* Make responsive for small screens */
+@media screen and (max-width: 768px) {
+    #Work div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Work img {
+        width: 90%; /* Makes images responsive */
+        height: auto;
+    }
+}
+/* Make responsive for small screens */
+@media screen and (max-width: 768px) {
+    #Work div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Work img {
+        width: 90%; /* Make images full width */
+        height: auto;
+    }
+}
+
+        /* Animations */
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+        /* Mobile Styles for Screens Up to 768px */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    #text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #text-container span img {
+        width: 100px; /* Adjust for mobile */
+        height: 100px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav button {
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image-container {
+        flex-direction: column; /* Stack images on small screens */
+        align-items: center;
+    }
+
+    #image-container img {
+        width: 90%; /* Make images responsive */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    section {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Extra Small Screens (Up to 480px) */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    #text-container span {
+        font-size: 14px;
+    }
+
+    nav button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+}
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1 style="text-align: center;">VEROD ENTERPRICES</h1>
+         <div id="text-container">
+            <span><img src="img.logo.jpeg" alt="Verod logo"></span>
+            <span>Contact Verod: <br><br>+254 714 422714 <br>+254 714 117454</span>
+            <span>Located at: <br><br>Olympic Estate <br>[Nairobi-Kenya]</span>
+            <span>Get in touch via: </span>
+
+         </div>
+
+        </header>
+        <div class="container">
+            <div id="image-container">
+                <img src="img.hightablesetup.jpg" alt="Photo">
+                <img src="img.chapo.jpg" alt="Photo">
+                <img src="img.wedges.jpg" alt="Photo">
+                <img src="img.fries.jpg" alt="Photo">
+                <img src="img.chomacut.jpg" alt="Photo">
+            </div>
+        </div>
+        <h2 style="text-align: center;color: green;">Elegant & Unforgettable Event Design </h2>
+            <p style="font-family: 'Times New Roman', Times, serif;text-align:left;">At <strong>Verod Enterprices</strong>, we specialize in creating breathtaking events that leave lasting impressions. Whether it's a lavish wedding, a stylish corporate gala, or an intimate gathering, we bring creativity, elegance, and meticulous attention to detail to every occasion. Our event design services transform ordinary spaces into extraordinary experiences, ensuring that every element—from décor to ambiance—reflects your vision perfectly.
+            </p>
+            <h2 style="text-align: center;color: green;">Exceptional Catering with a Gourmet Touch</h2>
+            <p>Great events deserve exceptional food, and that’s exactly what we deliver. Our catering services offer a curated selection of delicious, artfully presented dishes tailored to your event’s theme and guest preferences. Using only the freshest ingredients, we craft menus that delight the senses and elevate every celebration. Whether it’s a plated dinner, buffet-style feast, or interactive food stations, we create a dining experience that complements your event beautifully.</p>
+            <nav>
+                <button onclick="showSection('Work')">Worked Event Setups</button>
+                <button onclick="showSection('food')">Verod Delicacies</button>
+                <button onclick="showSection('Main')">Verod Core Stakeholders</button>
+                <button onclick="showSection('Clients')">Client Recommendations</button>
+                
+            </nav>
+            <div id="section-container">
+                <section id="Work">
+                    <h3>Our Achieved Event Setups</h3>
+                    <div class="work">
+                        <img src="img.ent1.jpg" alt="Setup">
+                    </div>
+                    <div class="work">
+                        <img src="img.ent4.jpg" alt="Setup">
+                    </div>
+                    <div class="work">
+                        <img src="img.ent3.jpg" alt="Setup">
+                    </div>
+                    <div class="work">
+                        <img src="img.ent6.jpg" alt="Setup">
+                    </div>
+                    <div class="work">
+                        <img src="img.ent5.jpg" alt="Setup">
+                    </div>
+                </section>
+            </div>
+            <div id="section-container">
+                <section id="food">
+                    <h3>Our Rich, well-seasoned, and satisfying delicasies</h3>
+                    <div class="taste">
+                        <img src="img.stew.jpg" alt="Food">
+                    </div>
+                    <div class="taste">
+                        <img src="img.steam.jpg" alt="Food">
+                    </div>
+                    <div class="taste">
+                        <img src="img.sausages.jpg" alt="Food">
+                    </div>
+                    <div class="taste">
+                        <img src="img.meatfry.jpg" alt="Food">
+                    </div>
+                    <div class="taste">
+                        <img src="img.chapo.jpg" alt="Food">
+                    </div>
+                </section>
+            </div>
+            <div id="section-container">
+                <section id="Main">
+                    <h3>EDWARD AGALO-Managing Director</h3>
+                    <P></P>
+                    <h3>VERONICAH ONYANGO-Assistant Manager</h3>
+                    <p></p>
+                    </div>
+                </section>
+            </div>
+            <div id="section-container">
+                <section id="Clients">
+                    <h3>Our client's Reviews & Recommendations</h3>
+                    
+                    <div class="taste">
+                        <img src="img.Picture7.png" alt="thoughts">
+                    </div>
+                    <div class="taste">
+                        <img src="img.Picture3.png" alt="thoughts">
+                    </div>
+                    <div class="taste">
+                        <img src="img.Picture4.png" alt="thoughts">
+                    </div>
+                </section>
+            </div>
+            <header class="second-header">
+                <h2 style="text-align: center;">🎀 Our Exclusive Event Décor Collection for Hire 🎀</h2>
+                    <p>At Verod Enterprises, we offer a wide range of elegant, high-quality event décor items for hire to help you create a stunning atmosphere that suits your style and theme. Whether you're planning a wedding, birthday party, corporate event, or private celebration—we've got the perfect pieces to bring your vision to life.</p>
+
+                    <h3>✨ 1. Elegant Table Décor & Centerpieces</h3>
+                  <ul>
+                    <li>✔️ Exquisite floral arrangements (fresh & artificial)</li>
+                    <li>✔️ Crystal vases, candle holders & candelabras</li>
+                    <li>✔️ Themed table runners & luxury linens</li>
+                  </ul>
+                    
+                    <h3>✨ 2. Stunning Seating & Accessories</h3>
+                  <ul>
+                    <li>✔️ Chiavari Chairs – Gold, Silver, White & Clear</li>
+                    <li>✔️ Throne & Luxe Seats – Perfect for weddings & VIPs</li>
+                    <li>✔️ Elegant chair covers, sashes & cushions</li>
+                  </ul>
+                    
+                    <h3>✨ 3. Majestic Backdrops & Draping</h3>
+                  <ul>
+                    <li>✔️ Wedding arches, floral walls & customizable backdrop frames</li>
+                    <li>✔️ Luxury satin, chiffon, and velvet draping in various colors</li>
+                    <li>✔️ Personalized banners & monogrammed designs</li>
+                  </ul>
+                    
+                    <h3>✨ 4. Spectacular Lighting & Ambience Enhancements</h3>
+                  <ul>
+                    <li>✔️ Fairy lights, chandeliers, lanterns & LED uplighting</li>
+                    <li>✔️ Mood lighting for outdoor & indoor events</li>
+                    <li>✔️ Romantic candlelight effects & neon signage</li>
+                  </ul>
+                    
+                    <h3>✨ 5. Luxurious Table Settings & Accessories</h3>
+                  <ul>
+                    <li>✔️ Gold & silver charger plates for elegant table settings</li>
+                    <li>✔️ Crystal-clear glassware, fine cutlery & premium dinnerware</li>
+                    <li>✔️ Customized name tags & menu cards</li>
+                  </ul>
+                    
+                    <h3>✨ 6. Premium Carpets & Aisle Runners</h3>
+                    <ul>
+                    <li>✔️ Luxurious red carpet & floral aisle runners</li>
+                    <li>✔️ Custom printed welcome mats & logo displays</li>
+                    <li>✔️ Indoor & outdoor event flooring solutions</li>
+                    </ul>
+                    
+                    <h3>✨ 7. Themed Props & Signage</h3>
+                    <ul>
+                    <li>✔️ Rustic, modern, and glamorous themed décor items</li>
+                    <li>✔️ Custom-made welcome signs, guest seating charts, & banners</li>
+                    <li>✔️ Floral installations, vintage props & photo booth accessories</li>
+                    </ul>
+                    
+                    <h3>💎 Why Choose Verod Enterprises for Décor Hire? 💎</h3>
+                    <ul>
+                    <li>✅ Affordable Rental Packages – Tailored to your event needs</li>
+                    <li>✅ High-Quality, Well-Maintained Items – Elegant, clean & event-ready</li>
+                    <li>✅ Seamless Setup & Breakdown Services – Stress-free event execution</li>
+                    <li>✅ Customization Available – Match your theme, colors & preferences</li>
+                    </ul>
+            </header>
+            
+            <footer style="background-color: rgb(13, 1, 1);padding: 10px;text-align: center;color: aliceblue;">
+                <p style="font-weight: bold;"> <em>Let’s turn your dream event into reality—elegance, beauty, and sophistication in every detail! 💫✨</em></p>
+               <p> &lt;&lt;&lt;&lt;Verod Catering, Decor & Events Services. God Above All &gt;&gt;&gt;&gt;</p>
+            </footer>
+
+            
+
+         <script>
+            function showSection(sectionId) {
+    // Hide all sections inside #section-container
+    document.querySelectorAll('#section-container section').forEach(section => {
+        section.style.display = 'none';
+        section.classList.remove('fade-in'); // Reset animation class
+    });
+
+    // Show the selected section and apply fade-in effect
+    let selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+        setTimeout(() => selectedSection.classList.add('fade-in'), 10); // Apply animation after display change
+    }
+}
+        </script>
+    </body>
+</html>
