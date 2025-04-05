@@ -19,11 +19,17 @@
                 font-family: 'Times New Roman', Times, serif;
             }
             /*Header styling*/
-            header{
-                background-color: black;
-                color: aliceblue;
-                padding:10px;
-            }
+            #topbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
             #text-container {
     display: flex;
     justify-content: left; /* Centers text horizontally */
@@ -340,7 +346,7 @@ img{
     </head>
 
     <body>
-        <header>
+        <header id="topbar">
             <h1 style="text-align: center;">VEROD ENTERPRICES</h1>
          <div id="text-container">
             <span><img src="img.logo.jpeg" alt="Verod logo"></span>
