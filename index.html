@@ -30,7 +30,7 @@
             z-index: 1000;
         }
             #text-container {
-    display: flex;
+     display: flex;
     justify-content: left; /* Centers text horizontally */
     gap: 100px; /* Adds space between text elements */
     font-size: 18px;
@@ -208,25 +208,16 @@ img{
     transform: scale(1.05);
 }
 .second-header{
+    color:black;
+    font-weight: bolder;
     padding-bottom: 20px;
     margin-bottom: 50px;
-    background: linear-gradient(-45deg, #403e3e, #036018, #534d4d, green);
     background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
+    background: url('img-smart.jpg') no-repeat center center / cover;
     }
     
 
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
+   
 /* Make responsive for small screens */
 @media screen and (max-width: 768px) {
     #Work div {
