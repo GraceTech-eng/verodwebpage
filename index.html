@@ -330,6 +330,52 @@ img{
         height: auto;
     }
 }
+/* Medium Devices (Tablets, 768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #text-container span {
+        font-size: 16px;
+    }
+
+    nav button {
+        padding: 10px 20px;
+        font-size: medium;
+    }
+
+    #image-container img,
+    #Work img,
+    #food img,
+    #Clients img {
+        width: 80%;
+        height: auto;
+    }
+
+    section {
+        max-width: 80%;
+    }
+}
+
+/* Large Screens (Desktops, 1024px and above) */
+@media screen and (min-width: 1024px) {
+    .container {
+        justify-content: center;
+    }
+
+    #text-container {
+        gap: 60px;
+    }
+
+    nav {
+        padding: 30px;
+    }
+
+    nav button {
+        font-size: 18px;
+    }
+
+    section {
+        max-width: 70%;
+    }
+}
             
             
         </style>
